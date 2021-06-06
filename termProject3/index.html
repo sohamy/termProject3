@@ -32,15 +32,6 @@
 					document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
 			}
 
-			//이미지
-			function ImageSize() {
-				if(backImg.style.pixelWidth<800)
-				{
-					backImg.style.pixelWidth +=2;
-					backImg.style.pixelHeight +=3;
-					setTimeout("ImageSize()", 10);
-				}
-			}
 		</script>
 	</head>
 
@@ -55,9 +46,9 @@
 	</script>
 		<script>page_counter(jcount);</script>번 접속하셨습니다.</font><br><br><br></div>
 
-		<img src = "sunflower.jpg" align = center hspace = 5% id=backImg></img>
+		
 	<marquee scrolldelay="1" scrollamount="50" direction = "up" behavior = "slide" >
-	
+		<img src = "sunflower.jpg" align = right width=50% hspace = 5%></img>
 			<ul class="ul">
 				<li>이름: 김해인<br><br>
 				<li>나이: 24 <br><br>
@@ -77,7 +68,7 @@
 		</ul>
 
 
-			<pre><script language="JavaScript">
+			<p align = center><script language="JavaScript">
 		function MouseOver(cell, newcolor) {
 			cell.bgColor = newcolor;
 			}
@@ -95,7 +86,7 @@
 					days[1] = 28;
 				var dday = days[1]
 				  var output_string = ""
-				  output_string += "<table border=1 bordercolor=black align=right width=60% bgcolor=honeydew>"
+				  output_string += "<table align=center border=1 bordercolor=black align=right width=60% bgcolor=honeydew>"
 				  output_string += "<th colspan=7>" 
 				  output_string += "<font color=#abd6f7 size=6 >"
 					 // 년과 월을 출력.
@@ -149,7 +140,7 @@
 				var thisMonth = today.getMonth();
 				var thisYear = today.getYear();
 				Calendar(thisMonth,thisYear);
-	</script></pre>
+	</script></p>
 	</marquee>
 	<br>
 	<br>
