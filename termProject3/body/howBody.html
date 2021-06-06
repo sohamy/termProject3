@@ -3,15 +3,24 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>운영체제의 구동</title>
 	<link rel = "stylesheet" href="./bodies.css" type="text/css">
+	<script language ="JavaScript">
+		function ImageSize(){
+			if (backImg.style.pixelWidth < 500){
+				backImg.style.pixelWidth += 3;
+				backImg.style.pixelHeight += 2;
+				setTimeout("ImageSize()", 10);
+			}
+		}
+	</script>
 </head>
-<body class="body">
+<body onload="ImageSize()" class="body">
 
 <font class="font">
 <a name="cpu"></a><h2 class="h2">cpu와 i/o연산</h2><br>
 
 입출력 장치들의 i/o연산은 각 장치에 부착된 컨트롤러에서 담당하고, 컴퓨터 내에서 수행되는 연산은 cpu가 담당한다.<br>
 이때 입출력 장치와 cpu사이에는 별도의 작업이 가능하다. 또한, 각 장치에는 이를 제어하기 위해 설치된 장치 컨트롤러에 장치로부터 들어오고 나가는 데이터를 임시 저장하기 위한 메모리인 로컬 버퍼(local buffer)를 가지고 있다.
-<p align = center><img src = runPic.jpg width = 50%></img></p>
+<p align = center><img id="backImg" border="0" src = runPic.jpg width = 50%></img></p>
 <ol>
 <li>프로세스에서 외부 입출력에 대한 요청 발생
 <li>컨트롤러에 의해서 외부 장치로의 입출력을 제어
