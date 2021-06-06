@@ -56,24 +56,25 @@
 				
 				function Calendar(Month,Year)
 				{
-				  var now = new Date(Year,10,26);
-				  firstDay = new Date(Year,10,7);
+				  var now = new Date(Year,2,25);
+				  firstDay = new Date(Year,2,3);
 				  startDay = firstDay.getDay();
 				
 				  if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
 						   days[1] = 29; 
 				  else
 					days[1] = 28;
+				var dday = days[1]
 				  var output_string = ""
-				  output_string += "<table border=1 bordercolor=black align=right>"
+				  output_string += "<table border=1 bordercolor=black align=right width=60% bgcolor=honeydew>"
 				  output_string += "<th colspan=7>" 
-				  output_string += "<font color=silver size=6 >"
+				  output_string += "<font color=#abd6f7 size=6 >"
 					 // 년과 월을 출력.
 				  output_string += now.getYear()+1900+1900+ "년 " + (now.getMonth()) + "월"
 				  output_string += "</font>"
 				  output_string += "</th>"
 				
-				  var openCol = "<td bgcolor=silver width=70 height=50> "
+				  var openCol = "<td bgcolor=#2db04d width=70 height=50> "
 				  var closeCol = "</font></b></td>"
 				  output_string += "<tr align=center valign=center>"
 				  var weekDay = new Array("일", "월", "화", "수", "목", "금", "토")
@@ -93,15 +94,15 @@
 					 column++;
 				  }
 				
-				  for (i=1; i<= 31; i++)
+				  for (i=1; i<= dday; i++)
 				  { 
-					   if ((i == 26)  && (Month == thisMonth) && (Year == thisYear))
+					   if ((i == 25)  && (Month == thisMonth) && (Year == thisYear))
 						 {
-							   document.write("<td width=70 height=50> <b><font color=black>" );
+							   document.write("<td width=70 height=50> <b><font color=green>" );
 									document.write(i,"일","<br>",Year+1900,"년","<br>","내 생일","</font></b></td>");
 						 }
 						else
-						   document.write("<td width=70 height=50>",i,"일","</td>");
+						   document.write("<td width=70 height=80 bgcolor=#ccefc1>",i,"일","</td>");
 						column++;
 						if (column == 7)
 						{
