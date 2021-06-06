@@ -1,0 +1,32 @@
+@font-face{
+    font-family: "Nanum";
+    src: url(NANUMSQUARER.TTF) format('truetype')
+}
+.first{background-color: abd6f7;
+border-radius: 0px 0px 25px 25px;
+text-align: center;
+padding-top: 25px;
+padding-bottom: 25px;
+color: honeydew;
+font-style: italic;
+}
+.body{
+    background-color: fffde0;
+    font-family: Nanum;
+}
+.table{text-align: center;
+width: 600px;
+border: dashed green;
+}
+.ul{margin-left: 25px;
+list-style-type: square;}
+.font1{font-family: Nanum;}
+.font2{color:grey;
+    font-size: 17;
+    font-weight: bolder;
+    font-family: "Nanum";}
+.font3{color:#2a5a2d;
+    font-size: 47;
+    font-family: "Nanum";
+    font-weight:900;}
+.a{text-decoration: none;}

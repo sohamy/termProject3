@@ -1,0 +1,19 @@
+.body{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('background.jpg');
+    background-size: cover;}
+@font-face{
+    font-family: "Nanum";
+    src: url(./NANUMSQUARER.TTF) format('truetype')}
+.font{
+    font-family: "Nanum";
+    color:#B8F3B8;}
+.h2{
+    font-family: "Nanum";
+    color:#FFADC5;
+    text-align: center;}
+.h3{
+    font-family: "Nanum";
+    color: #EBDBC4;
+}
+
+
