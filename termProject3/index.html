@@ -30,13 +30,22 @@
 					document.write('<span class="counter">0</span>')
 				for (y=0;y<(jcount.toString().length);y++)
 					document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
-			}  
+			}
+
+			//이미지
+			function ImageSize() {
+				if(backImage.style.pixelWidth<1200)
+				{
+					backImage.style.pixelWidth +=10;
+					setTimeout("ImageSize()", 10);
+				}
+			}
 		</script>
 	</head>
 
-<body class="body">
+<body class="body" onLoad="ImageSize()">
 <bgsound src = "villain.mp3" autostart = "true" loop = "infinite">
-
+	<img src="sky.jpg" id=backImage align='center'>
 	<h1 class="first">자기 소개 페이지</h1>
 	<br>
 
@@ -48,7 +57,27 @@
 
 	
 	<marquee scrolldelay="1" scrollamount="50" direction = "up" behavior = "slide" >
-	<pre><script language="JavaScript">
+
+			<ul class="ul">
+				<li>이름: 김해인<br><br>
+				<li>나이: 24 <br><br>
+				<li>생일: 98년 2월 25일<br><br>
+				<li>성별: 여성 <br><br>
+				<li>주소: 경기도 광명시 일직로 28 1006호 <br><br>
+				<li>전화: 010-6551-5983 <br><br>
+				<li>이메일: khein141105@gmail.com <br><br>
+				<li>대학: 건국대학교 글로컬캠퍼스<br><br>
+				<li>전공: ict융합공학부 컴퓨터공학과<br><br>
+				<li>학번: 201721130<br><br>
+				<li>신장: 155cm <br><br>
+				<li>혈액형: a형 <br><br>
+				<li>취미: 독서, 게임 <br><br>
+				<li>특기:  스도쿠, 로직퍼즐<br><br>
+				<li>좋아하는 노래: 스텔라장 - 빌런<br>
+		</ul>
+
+<br>
+			<p align = 'center'><script language="JavaScript">
 		function MouseOver(cell, newcolor) {
 			cell.bgColor = newcolor;
 			}
@@ -120,25 +149,7 @@
 				var thisMonth = today.getMonth();
 				var thisYear = today.getYear();
 				Calendar(thisMonth,thisYear);
-	</script></pre>
-
-			<ul class="ul">
-				<li>이름: 김해인<br><br>
-				<li>나이: 24 <br><br>
-				<li>생일: 98년 2월 25일<br><br>
-				<li>성별: 여성 <br><br>
-				<li>주소: 경기도 광명시 일직로 28 1006호 <br><br>
-				<li>전화: 010-6551-5983 <br><br>
-				<li>이메일: khein141105@gmail.com <br><br>
-				<li>대학: 건국대학교 글로컬캠퍼스<br><br>
-				<li>전공: ict융합공학부 컴퓨터공학과<br><br>
-				<li>학번: 201721130<br><br>
-				<li>신장: 155cm <br><br>
-				<li>혈액형: a형 <br><br>
-				<li>취미: 독서, 게임 <br><br>
-				<li>특기:  스도쿠, 로직퍼즐<br><br>
-				<li>좋아하는 노래: 스텔라장 - 빌런<br>
-		</ul>
+	</script></p>
 	</marquee>
 	<br>
 	<br>
