@@ -31,7 +31,39 @@
 				for (y=0;y<(jcount.toString().length);y++)
 					document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
 			}
-
+			var intNo = 15;
+			var xp, yp;
+			var i, intWidth = 1200, intHeight = 800;
+			var Multiple = 5;
+	
+			xp = new Array();
+			yp = new Array();
+	
+			for (i = 0; i < intNo; ++ i)
+			{
+				xp[i] = Math.random()*(intWidth-25);
+				yp[i] = Math.random()*intHeight;
+				
+				document.write("<div id=\"dot"+ i + "\" style=\"position: absolute; z-index: " + i
+					+ "; visibility: visible; top: 15px; left: 15px;\"><img src=\"leaf.png\" border=\"0\" width=\"50\" height=\"50\"></div>");
+			}
+			function leafIE() {
+				for(i = 0; i < intNo; ++ i)
+				{
+					xp[i] += (Math.random()-0.5)*Multiple;
+					yp[i] += (Math.random())*Multiple/2;
+					if (yp[i] > intHeight){
+						xp[i] = Math.random()*(intWidth-25);
+						yp[i] = 0;
+					}
+				
+					document.all["dot"+i].style.pixelTop = yp[i];
+					document.all["dot"+i].style.pixelLeft= xp[i];
+				}
+				setTimeout("leafIE()", 20);
+			}
+	
+			leafIE();
 		</script>
 	</head>
 
@@ -48,7 +80,7 @@
 
 		
 	<marquee scrolldelay="1" scrollamount="50" direction = "up" behavior = "slide" >
-		<img src = "autumn.jpg" align = right width=50% hspace = 5%></img>
+		<img src = "sunflower.jpg" align = right width=50% hspace = 5%></img>
 			<ul class="ul">
 				<li>이름: 김해인<br><br>
 				<li>나이: 24 <br><br>
@@ -140,6 +172,8 @@
 				var thisMonth = today.getMonth();
 				var thisYear = today.getYear();
 				Calendar(thisMonth,thisYear);
+
+				
 	</script></p>
 	</marquee>
 	<br>
