@@ -16,16 +16,16 @@ font-style: italic;
 }
 .table{text-align: center;
 width: 600px;
-border: dashed green;
+border: dashed rgb(231, 221, 75);
 }
 .ul{margin-left: 25px;
 list-style-type: square;}
 .font1{font-family: Nanum;}
-.font2{color:grey;
+.font2{color:rgb(194, 194, 194);
     font-size: 17;
     font-weight: bolder;
     font-family: "Nanum";}
-.font3{color:#2a5a2d;
+.font3{color:#cec2a8;
     font-size: 47;
     font-family: "Nanum";
     font-weight:900;}

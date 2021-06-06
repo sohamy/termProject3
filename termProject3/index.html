@@ -80,7 +80,7 @@
 
 		
 	<marquee scrolldelay="1" scrollamount="50" direction = "up" behavior = "slide" >
-		<img src = "autumn.jpg" align = right width=50% hspace = 5%></img>
+		<img src = "autumn.jpg" align = right width=50%></img>
 			<ul class="ul">
 				<li>이름: 김해인<br><br>
 				<li>나이: 24 <br><br>
@@ -99,7 +99,8 @@
 				<li>좋아하는 노래: 스텔라장 - 빌런<br>
 		</ul>
 
-
+<br>
+<br>
 			<p align = center><script language="JavaScript">
 		function MouseOver(cell, newcolor) {
 			cell.bgColor = newcolor;
@@ -120,13 +121,13 @@
 				  var output_string = ""
 				  output_string += "<table align=center border=1 bordercolor=black align=right width=60% bgcolor=honeydew>"
 				  output_string += "<th colspan=7>" 
-				  output_string += "<font color=#abd6f7 size=6 >"
+				  output_string += "<font color=brown size=6 >"
 					 // 년과 월을 출력.
 				  output_string += now.getYear()+1900+1900+ "년 " + (now.getMonth()) + "월"
 				  output_string += "</font>"
 				  output_string += "</th>"
 				
-				  var openCol = "<td bgcolor=#2db04d width=70 height=50> "
+				  var openCol = "<td bgcolor=#644a24 width=70 height=50><font color=white> "
 				  var closeCol = "</font></b></td>"
 				  output_string += "<tr align=center valign=center>"
 				  var weekDay = new Array("일", "월", "화", "수", "목", "금", "토")
@@ -150,11 +151,11 @@
 				  { 
 					   if ((i == 25)  && (Month == thisMonth) && (Year == thisYear))
 						 {
-							   document.write("<td width=70 height=50> <b><font color=green>" );
+							   document.write("<td width=70 height=50> <b><font color=red>" );
 									document.write(i,"일","<br>",Year+1900,"년","<br>","내 생일","</font></b></td>");
 						 }
 						else
-						   document.write("<td width=70 height=80 bgcolor=#ccefc1>",i,"일","</td>");
+						   document.write("<td width=70 height=80 bgcolor=#ffc799>",i,"일","</td>");
 						column++;
 						if (column == 7)
 						{
@@ -176,18 +177,17 @@
 				
 	</script></p>
 	</marquee>
-	<br>
-	<br>
-	<br>
+<br>
+<br>
 <table class = "table" align="center" border="1">
-	<tr style = background-color:#2db04d>
+	<tr style = background-color:#ffc799>
 		<td><font class="font1">제출과제</font></td>
 	</tr>
-	<tr style = background-color:#ccefc1>
+	<tr style = background-color:#644a24>
 		<td><iframe src="OperatingSystem.html" scrolling="no" align = "right"
 			width = 100% height="90px"></iframe></td>
 	</tr>
 </table>
-
+</p>
 </body>
 <html>
